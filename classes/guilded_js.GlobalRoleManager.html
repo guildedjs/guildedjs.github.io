@@ -16,6 +16,9 @@
 <li><a href="../modules/guilded_js.html">guilded.js</a></li>
 <li><a href="guilded_js.GlobalRoleManager.html">GlobalRoleManager</a></li></ul>
 <h1>Class GlobalRoleManager</h1></div>
+<section class="tsd-panel tsd-comment">
+<div class="tsd-comment tsd-typography"><p>A class representing a global role manager. At the moment, we don&#39;t cache roles in this structure.</p>
+</div></section>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
@@ -23,7 +26,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">GlobalRoleManager</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f965615/packages/guilded.js/lib/managers/global/RoleManager.ts#L3">guilded.js/lib/managers/global/RoleManager.ts:3</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/de1aaa3/packages/guilded.js/lib/managers/global/RoleManager.ts#L6">guilded.js/lib/managers/global/RoleManager.ts:6</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -58,7 +61,7 @@
 <h4 class="tsd-returns-title">Returns <a href="guilded_js.GlobalRoleManager.html" class="tsd-signature-type" data-tsd-kind="Class">GlobalRoleManager</a></h4><aside class="tsd-sources">
 <p>Inherited from <a href="guilded_js.GlobalManager.html">GlobalManager</a>.<a href="guilded_js.GlobalManager.html#constructor">constructor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f965615/packages/guilded.js/lib/managers/global/GlobalManager.ts#L4">guilded.js/lib/managers/global/GlobalManager.ts:4</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/de1aaa3/packages/guilded.js/lib/managers/global/GlobalManager.ts#L7">guilded.js/lib/managers/global/GlobalManager.ts:7</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="client" class="tsd-anchor"></a>
@@ -66,7 +69,7 @@
 <div class="tsd-signature">client<span class="tsd-signature-symbol">:</span> <a href="guilded_js.Client.html" class="tsd-signature-type" data-tsd-kind="Class">Client</a></div><aside class="tsd-sources">
 <p>Inherited from <a href="guilded_js.GlobalManager.html">GlobalManager</a>.<a href="guilded_js.GlobalManager.html#client">client</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f965615/packages/guilded.js/lib/managers/global/GlobalManager.ts#L4">guilded.js/lib/managers/global/GlobalManager.ts:4</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/de1aaa3/packages/guilded.js/lib/managers/global/GlobalManager.ts#L7">guilded.js/lib/managers/global/GlobalManager.ts:7</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="addRoleToMember" class="tsd-anchor"></a>
@@ -74,58 +77,82 @@
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 <li class="tsd-signature tsd-anchor-link" id="addRoleToMember.addRoleToMember-1">add<wbr/>Role<wbr/>To<wbr/>Member<span class="tsd-signature-symbol">(</span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, memberId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, roleId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#addRoleToMember.addRoleToMember-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Assign role to member</p>
+<div class="tsd-comment tsd-typography"><p>Assigns a role to a member.</p>
+
+<h3>Returns</h3><p>A Promise that resolves with no value upon successful completion.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>serverId: <span class="tsd-signature-type">string</span></h5></li>
+<h5>serverId: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The ID of the server.</p>
+</div></li>
 <li>
-<h5>memberId: <span class="tsd-signature-type">string</span></h5></li>
+<h5>memberId: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The ID of the member.</p>
+</div></li>
 <li>
-<h5>roleId: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h5>roleId: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The ID of the role.</p>
+</div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f965615/packages/guilded.js/lib/managers/global/RoleManager.ts#L10">guilded.js/lib/managers/global/RoleManager.ts:10</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/de1aaa3/packages/guilded.js/lib/managers/global/RoleManager.ts#L25">guilded.js/lib/managers/global/RoleManager.ts:25</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="giveXP" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>giveXP</span><a href="#giveXP" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 <li class="tsd-signature tsd-anchor-link" id="giveXP.giveXP-1">giveXP<span class="tsd-signature-symbol">(</span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, roleId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><a href="#giveXP.giveXP-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Award XP to a role</p>
+<div class="tsd-comment tsd-typography"><p>Awards XP to a role.</p>
+
+<h3>Returns</h3><p>A Promise that resolves with the total XP awarded to the role.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>serverId: <span class="tsd-signature-type">string</span></h5></li>
+<h5>serverId: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The ID of the server.</p>
+</div></li>
 <li>
-<h5>roleId: <span class="tsd-signature-type">number</span></h5></li>
+<h5>roleId: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The ID of the role.</p>
+</div></li>
 <li>
-<h5>amount: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h5>amount: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The amount of XP to award.</p>
+</div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f965615/packages/guilded.js/lib/managers/global/RoleManager.ts#L5">guilded.js/lib/managers/global/RoleManager.ts:5</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/de1aaa3/packages/guilded.js/lib/managers/global/RoleManager.ts#L14">guilded.js/lib/managers/global/RoleManager.ts:14</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="removeRoleFromMember" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>remove<wbr/>Role<wbr/>From<wbr/>Member</span><a href="#removeRoleFromMember" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 <li class="tsd-signature tsd-anchor-link" id="removeRoleFromMember.removeRoleFromMember-1">remove<wbr/>Role<wbr/>From<wbr/>Member<span class="tsd-signature-symbol">(</span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, memberId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, roleId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#removeRoleFromMember.removeRoleFromMember-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Remove role from member</p>
+<div class="tsd-comment tsd-typography"><p>Removes a role from a member.</p>
+
+<h3>Returns</h3><p>A Promise that resolves with no value upon successful completion.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>serverId: <span class="tsd-signature-type">string</span></h5></li>
+<h5>serverId: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The ID of the server.</p>
+</div></li>
 <li>
-<h5>memberId: <span class="tsd-signature-type">string</span></h5></li>
+<h5>memberId: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The ID of the member.</p>
+</div></li>
 <li>
-<h5>roleId: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h5>roleId: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The ID of the role.</p>
+</div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f965615/packages/guilded.js/lib/managers/global/RoleManager.ts#L15">guilded.js/lib/managers/global/RoleManager.ts:15</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/de1aaa3/packages/guilded.js/lib/managers/global/RoleManager.ts#L36">guilded.js/lib/managers/global/RoleManager.ts:36</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">

@@ -16,6 +16,10 @@
 <li><a href="../modules/guilded_js.html">guilded.js</a></li>
 <li><a href="guilded_js.GlobalChannelManager.html">GlobalChannelManager</a></li></ul>
 <h1>Class GlobalChannelManager</h1></div>
+<section class="tsd-panel tsd-comment">
+<div class="tsd-comment tsd-typography"><p>Manages channels on the global scope. This can hold channels of any type, with all of them extending Channel.
+You will likely need to cast the returned values from cache or fetches</p>
+</div></section>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
@@ -23,7 +27,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">GlobalChannelManager</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f965615/packages/guilded.js/lib/managers/global/ChannelManager.ts#L6">guilded.js/lib/managers/global/ChannelManager.ts:6</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/de1aaa3/packages/guilded.js/lib/managers/global/ChannelManager.ts#L11">guilded.js/lib/managers/global/ChannelManager.ts:11</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -64,7 +68,7 @@
 <h4 class="tsd-returns-title">Returns <a href="guilded_js.GlobalChannelManager.html" class="tsd-signature-type" data-tsd-kind="Class">GlobalChannelManager</a></h4><aside class="tsd-sources">
 <p>Inherited from <a href="guilded_js.CacheableStructManager.html">CacheableStructManager</a>.<a href="guilded_js.CacheableStructManager.html#constructor">constructor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f965615/packages/guilded.js/lib/managers/global/CacheableStructManager.ts#L6">guilded.js/lib/managers/global/CacheableStructManager.ts:6</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/de1aaa3/packages/guilded.js/lib/managers/global/GlobalManager.ts#L7">guilded.js/lib/managers/global/GlobalManager.ts:7</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="cache" class="tsd-anchor"></a>
@@ -72,13 +76,13 @@
 <div class="tsd-signature">cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="guilded_js.Channel.html" class="tsd-signature-type" data-tsd-kind="Class">Channel</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div><aside class="tsd-sources">
 <p>Inherited from <a href="guilded_js.CacheableStructManager.html">CacheableStructManager</a>.<a href="guilded_js.CacheableStructManager.html#cache">cache</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f965615/packages/guilded.js/lib/managers/global/CacheableStructManager.ts#L5">guilded.js/lib/managers/global/CacheableStructManager.ts:5</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/de1aaa3/packages/guilded.js/lib/managers/global/CacheableStructManager.ts#L13">guilded.js/lib/managers/global/CacheableStructManager.ts:13</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a id="client" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>client</span><a href="#client" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">client<span class="tsd-signature-symbol">:</span> <a href="guilded_js.Client.html" class="tsd-signature-type" data-tsd-kind="Class">Client</a></div><aside class="tsd-sources">
 <p>Inherited from <a href="guilded_js.CacheableStructManager.html">CacheableStructManager</a>.<a href="guilded_js.CacheableStructManager.html#client">client</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f965615/packages/guilded.js/lib/managers/global/CacheableStructManager.ts#L6">guilded.js/lib/managers/global/CacheableStructManager.ts:6</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/de1aaa3/packages/guilded.js/lib/managers/global/GlobalManager.ts#L7">guilded.js/lib/managers/global/GlobalManager.ts:7</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Accessors</h2>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="shouldCacheChannel" class="tsd-anchor"></a>
@@ -86,9 +90,11 @@
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
 <li class="tsd-signature" id="shouldCacheChannel.shouldCacheChannel-1"><span class="tsd-signature-symbol">get</span> shouldCacheChannel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Determine whether a channel should be cached or not</p>
+</div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f965615/packages/guilded.js/lib/managers/global/ChannelManager.ts#L7">guilded.js/lib/managers/global/ChannelManager.ts:7</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/de1aaa3/packages/guilded.js/lib/managers/global/ChannelManager.ts#L14">guilded.js/lib/managers/global/ChannelManager.ts:14</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="create" class="tsd-anchor"></a>
@@ -96,57 +102,86 @@
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 <li class="tsd-signature tsd-anchor-link" id="create.create-1">create<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../types/_guildedjs_guilded_api_typings.RESTPostChannelsBody.html" class="tsd-signature-type" data-tsd-kind="Type alias">RESTPostChannelsBody</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="guilded_js.Channel.html" class="tsd-signature-type" data-tsd-kind="Class">Channel</a><span class="tsd-signature-symbol">&gt;</span><a href="#create.create-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Create a new channel</p>
+
+<h3>Returns</h3><p>Promise that resolves with the newly created channel</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>options: <a href="../types/_guildedjs_guilded_api_typings.RESTPostChannelsBody.html" class="tsd-signature-type" data-tsd-kind="Type alias">RESTPostChannelsBody</a></h5></li></ul></div>
+<h5>options: <a href="../types/_guildedjs_guilded_api_typings.RESTPostChannelsBody.html" class="tsd-signature-type" data-tsd-kind="Type alias">RESTPostChannelsBody</a></h5>
+<div class="tsd-comment tsd-typography"><p>Channel creation options</p>
+</div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="guilded_js.Channel.html" class="tsd-signature-type" data-tsd-kind="Class">Channel</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f965615/packages/guilded.js/lib/managers/global/ChannelManager.ts#L11">guilded.js/lib/managers/global/ChannelManager.ts:11</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/de1aaa3/packages/guilded.js/lib/managers/global/ChannelManager.ts#L23">guilded.js/lib/managers/global/ChannelManager.ts:23</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="delete" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>delete</span><a href="#delete" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 <li class="tsd-signature tsd-anchor-link" id="delete.delete-1">delete<span class="tsd-signature-symbol">(</span>channelId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="guilded_js.Channel.html" class="tsd-signature-type" data-tsd-kind="Class">Channel</a><span class="tsd-signature-symbol">&gt;</span><a href="#delete.delete-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Delete a channel by ID</p>
+
+<h3>Returns</h3><p>Promise that resolves with the deleted channel, or void if not cached.</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>channelId: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h5>channelId: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>ID of the channel to delete</p>
+</div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="guilded_js.Channel.html" class="tsd-signature-type" data-tsd-kind="Class">Channel</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f965615/packages/guilded.js/lib/managers/global/ChannelManager.ts#L41">guilded.js/lib/managers/global/ChannelManager.ts:41</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/de1aaa3/packages/guilded.js/lib/managers/global/ChannelManager.ts#L71">guilded.js/lib/managers/global/ChannelManager.ts:71</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="fetch" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>fetch</span><a href="#fetch" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 <li class="tsd-signature tsd-anchor-link" id="fetch.fetch-1">fetch<span class="tsd-signature-symbol">(</span>channelId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, force<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="guilded_js.Channel.html" class="tsd-signature-type" data-tsd-kind="Class">Channel</a><span class="tsd-signature-symbol">&gt;</span><a href="#fetch.fetch-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Fetch a channel by ID
+Notice: if you&#39;re using TypeScript, you will need to upcast to your desired channel type.</p>
+
+<h3>Returns</h3><p>Promise that resolves with the fetched channel</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>channelId: <span class="tsd-signature-type">string</span></h5></li>
+<h5>channelId: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>ID of the channel to fetch</p>
+</div></li>
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> force: <span class="tsd-signature-type">boolean</span></h5></li></ul></div>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> force: <span class="tsd-signature-type">boolean</span></h5>
+<div class="tsd-comment tsd-typography"><p>Whether to force a fetch from the API</p>
+</div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="guilded_js.Channel.html" class="tsd-signature-type" data-tsd-kind="Class">Channel</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f965615/packages/guilded.js/lib/managers/global/ChannelManager.ts#L18">guilded.js/lib/managers/global/ChannelManager.ts:18</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/de1aaa3/packages/guilded.js/lib/managers/global/ChannelManager.ts#L37">guilded.js/lib/managers/global/ChannelManager.ts:37</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="update" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>update</span><a href="#update" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 <li class="tsd-signature tsd-anchor-link" id="update.update-1">update<span class="tsd-signature-symbol">(</span>channelId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../types/_guildedjs_guilded_api_typings.RESTPatchChannelBody.html" class="tsd-signature-type" data-tsd-kind="Type alias">RESTPatchChannelBody</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="guilded_js.Channel.html" class="tsd-signature-type" data-tsd-kind="Class">Channel</a><span class="tsd-signature-symbol">&gt;</span><a href="#update.update-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Update a channel by ID</p>
+
+<h3>Returns</h3><p>Promise that resolves with the updated channel</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5>channelId: <span class="tsd-signature-type">string</span></h5></li>
+<h5>channelId: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>ID of the channel to update</p>
+</div></li>
 <li>
-<h5>options: <a href="../types/_guildedjs_guilded_api_typings.RESTPatchChannelBody.html" class="tsd-signature-type" data-tsd-kind="Type alias">RESTPatchChannelBody</a></h5></li></ul></div>
+<h5>options: <a href="../types/_guildedjs_guilded_api_typings.RESTPatchChannelBody.html" class="tsd-signature-type" data-tsd-kind="Type alias">RESTPatchChannelBody</a></h5>
+<div class="tsd-comment tsd-typography"><p>Channel update options</p>
+</div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="guilded_js.Channel.html" class="tsd-signature-type" data-tsd-kind="Class">Channel</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/f965615/packages/guilded.js/lib/managers/global/ChannelManager.ts#L30">guilded.js/lib/managers/global/ChannelManager.ts:30</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/guildedjs/guilded.js/blob/de1aaa3/packages/guilded.js/lib/managers/global/ChannelManager.ts#L55">guilded.js/lib/managers/global/ChannelManager.ts:55</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
