@@ -34,9 +34,15 @@
 </ul>
 <a id="md:📥-installation" class="tsd-anchor"></a><h2><a href="#md:📥-installation">📥 Installation</a></h2><p><a href="https://npmjs.org/package/guilded.js"><img src="https://nodei.co/npm/guilded.js.png" alt="NPM"></a></p>
 <p><strong>Recommended that you use node v18+</strong></p>
-<ul>
+<a id="md:using-create-guilded-app" class="tsd-anchor"></a><h3><a href="#md:using-create-guilded-app">Using <code>create-guilded-app</code></a></h3><ul>
+<li><code>yarn create guilded-app &lt;project-name&gt;</code></li>
+<li><code>pnpm create guilded-app &lt;project-name&gt;</code></li>
+<li><code>npm init guilded-app &lt;project-name&gt;</code></li>
+</ul>
+<a id="md:manual-installation" class="tsd-anchor"></a><h3><a href="#md:manual-installation">Manual Installation</a></h3><ul>
 <li><code>npm install guilded.js</code></li>
 <li><code>yarn add guilded.js</code></li>
+<li><code>pnpm add guilded.js</code></li>
 </ul>
 <a id="md:⚡-usage" class="tsd-anchor"></a><h2><a href="#md:⚡-usage">⚡ Usage</a></h2><p>You can find extra examples <a href="https://github.com/guildedjs/examples/tree/main/examples">here</a></p>
 <pre><code class="language-ts"><span class="hl-0">const</span><span class="hl-1"> { </span><span class="hl-2">Client</span><span class="hl-1"> } = </span><span class="hl-3">require</span><span class="hl-1">(</span><span class="hl-4">&quot;guilded.js&quot;</span><span class="hl-1">);</span><br/><span class="hl-5">// import { Client } from &quot;guilded.js&quot;;</span><br/><span class="hl-0">const</span><span class="hl-1"> </span><span class="hl-2">client</span><span class="hl-1"> = </span><span class="hl-0">new</span><span class="hl-1"> </span><span class="hl-3">Client</span><span class="hl-1">({ </span><span class="hl-6">token:</span><span class="hl-1"> </span><span class="hl-4">&quot;TOKEN_HERE&quot;</span><span class="hl-1"> });</span><br/><br/><span class="hl-6">client</span><span class="hl-1">.</span><span class="hl-3">on</span><span class="hl-1">(</span><span class="hl-4">&quot;ready&quot;</span><span class="hl-1">, () </span><span class="hl-0">=&gt;</span><span class="hl-1"> </span><span class="hl-6">console</span><span class="hl-1">.</span><span class="hl-3">log</span><span class="hl-1">(</span><span class="hl-4">`Bot is successfully logged in`</span><span class="hl-1">));</span><br/><span class="hl-6">client</span><span class="hl-1">.</span><span class="hl-3">on</span><span class="hl-1">(</span><span class="hl-4">&quot;messageCreated&quot;</span><span class="hl-1">, (</span><span class="hl-6">message</span><span class="hl-1">) </span><span class="hl-0">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-7">if</span><span class="hl-1"> (</span><span class="hl-6">message</span><span class="hl-1">.</span><span class="hl-6">content</span><span class="hl-1"> === </span><span class="hl-4">&quot;test&quot;</span><span class="hl-1">) {</span><br/><span class="hl-1">        </span><span class="hl-7">return</span><span class="hl-1"> </span><span class="hl-6">message</span><span class="hl-1">.</span><span class="hl-3">reply</span><span class="hl-1">(</span><span class="hl-4">&quot;test indeed&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">    }</span><br/><span class="hl-1">});</span><br/><br/><span class="hl-6">client</span><span class="hl-1">.</span><span class="hl-3">login</span><span class="hl-1">();</span>
@@ -83,6 +89,10 @@
 <li><a href="#md:📝-about"><span>📝 <wbr/>About</span></a></li>
 <li><a href="#md:📦-packages"><span>📦 <wbr/>Packages</span></a></li>
 <li><a href="#md:📥-installation"><span>📥 <wbr/>Installation</span></a></li>
+<li>
+<ul>
+<li><a href="#md:using-create-guilded-app"><span>Using create-<wbr/>guilded-<wbr/>app</span></a></li>
+<li><a href="#md:manual-installation"><span>Manual <wbr/>Installation</span></a></li></ul></li>
 <li><a href="#md:⚡-usage"><span>⚡ <wbr/>Usage</span></a></li>
 <li><a href="#md:📃-documentation"><span>📃 <wbr/>Documentation</span></a></li>
 <li>
