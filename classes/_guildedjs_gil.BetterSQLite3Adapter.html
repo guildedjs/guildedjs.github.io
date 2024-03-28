@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>Group | Guilded.JS</title><meta name="description" content="Documentation for Guilded.JS"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>BetterSQLite3Adapter | Guilded.JS</title><meta name="description" content="Documentation for Guilded.JS"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,20 +13,17 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../index.html">Guilded.JS</a></li>
-<li><a href="../modules/guilded_js.html">guilded.js</a></li>
-<li><a href="guilded_js.Group.html">Group</a></li></ul>
-<h1>Class Group</h1></div>
-<section class="tsd-panel tsd-comment">
-<div class="tsd-comment tsd-typography"><p>A group in a server in Guilded</p>
-</div></section>
+<li><a href="../modules/_guildedjs_gil.html">@guildedjs/gil</a></li>
+<li><a href="_guildedjs_gil.BetterSQLite3Adapter.html">BetterSQLite3Adapter</a></li></ul>
+<h1>Class BetterSQLite3Adapter</h1></div>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
-<li><a href="guilded_js.Base.html" class="tsd-signature-type tsd-kind-class">Base</a><span class="tsd-signature-symbol">&lt;</span><a href="../types/_guildedjs_api.GroupPayload.html" class="tsd-signature-type tsd-kind-type-alias">GroupPayload</a><span class="tsd-signature-symbol">&gt;</span>
+<li><a href="_guildedjs_gil.DatabaseAdapter.html" class="tsd-signature-type tsd-kind-class">DatabaseAdapter</a>
 <ul class="tsd-hierarchy">
-<li><span class="target">Group</span></li></ul></li></ul></section><aside class="tsd-sources">
+<li><span class="target">BetterSQLite3Adapter</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L8">guilded.js/lib/structures/Group.ts:8</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/gil/lib/adapters/db/BetterSQLite3Adapter.ts#L4">adapters/db/BetterSQLite3Adapter.ts:4</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -34,216 +31,105 @@
 <div class="tsd-accordion-details">
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Constructors</h3>
-<div class="tsd-index-list"><a href="guilded_js.Group.html#constructor" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#4D7FFF" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-512-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-512-text"></path></svg><span>constructor</span></a>
+<div class="tsd-index-list"><a href="_guildedjs_gil.BetterSQLite3Adapter.html#constructor" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#4D7FFF" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-512-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-512-text"></path></svg><span>constructor</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="guilded_js.Group.html#archivedAt" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-1024-path"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)" id="icon-1024-text"></path></svg><span>archived<wbr/>At</span></a>
-<a href="guilded_js.Group.html#archivedBy" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>archived<wbr/>By</span></a>
-<a href="guilded_js.Group.html#avatar" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>avatar</span></a>
-<a href="guilded_js.Group.html#client" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>client</span></a>
-<a href="guilded_js.Group.html#createdAt" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>created<wbr/>At</span></a>
-<a href="guilded_js.Group.html#createdBy" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>created<wbr/>By</span></a>
-<a href="guilded_js.Group.html#description" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>description</span></a>
-<a href="guilded_js.Group.html#emoteId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>emote<wbr/>Id</span></a>
-<a href="guilded_js.Group.html#id" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>id</span></a>
-<a href="guilded_js.Group.html#isHome" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>is<wbr/>Home</span></a>
-<a href="guilded_js.Group.html#isPublic" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>is<wbr/>Public</span></a>
-<a href="guilded_js.Group.html#name" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>name</span></a>
-<a href="guilded_js.Group.html#raw" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>raw</span></a>
-<a href="guilded_js.Group.html#serverId" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>server<wbr/>Id</span></a>
-<a href="guilded_js.Group.html#updatedAt" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>updated<wbr/>At</span></a>
-<a href="guilded_js.Group.html#updatedBy" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>updated<wbr/>By</span></a>
+<div class="tsd-index-list"><a href="_guildedjs_gil.BetterSQLite3Adapter.html#options" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-1024-path"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)" id="icon-1024-text"></path></svg><span>options</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
-<div class="tsd-index-list"><a href="guilded_js.Group.html#_clone" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-2048-path"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)" id="icon-2048-text"></path></svg><span>_clone</span></a>
-<a href="guilded_js.Group.html#_update" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>_update</span></a>
-<a href="guilded_js.Group.html#addMember" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>add<wbr/>Member</span></a>
-<a href="guilded_js.Group.html#removeMember" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>remove<wbr/>Member</span></a>
+<div class="tsd-index-list"><a href="_guildedjs_gil.BetterSQLite3Adapter.html#createServer" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-2048-path"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)" id="icon-2048-text"></path></svg><span>create<wbr/>Server</span></a>
+<a href="_guildedjs_gil.BetterSQLite3Adapter.html#getRoles" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Roles</span></a>
+<a href="_guildedjs_gil.BetterSQLite3Adapter.html#getServer" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Server</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Constructors</h2>
 <section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_Group"><span class="tsd-kind-constructor-signature">new <wbr/>Group</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">client</span>, <span class="tsd-kind-parameter">data</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="guilded_js.Group.html" class="tsd-signature-type tsd-kind-class">Group</a><a href="#constructor.new_Group" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_BetterSQLite3Adapter"><span class="tsd-kind-constructor-signature">new <wbr/>BetterSQLite3<wbr/>Adapter</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_guildedjs_gil.BetterSQLite3Adapter.html" class="tsd-signature-type tsd-kind-class">BetterSQLite3Adapter</a><a href="#constructor.new_BetterSQLite3Adapter" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">client</span>: <a href="guilded_js.Client.html" class="tsd-signature-type tsd-kind-class">Client</a></h5></li>
-<li>
-<h5><span class="tsd-kind-parameter">data</span>: <a href="../types/_guildedjs_api.GroupPayload.html" class="tsd-signature-type tsd-kind-type-alias">GroupPayload</a></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="guilded_js.Group.html" class="tsd-signature-type tsd-kind-class">Group</a></h4><aside class="tsd-sources">
-<p>Overrides <a href="guilded_js.Base.html">Base</a>.<a href="guilded_js.Base.html#constructor">constructor</a></p>
+<h5><span class="tsd-kind-parameter">options</span>: <span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">roleTable</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">serverIdKey</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">serverTable</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">sqliteInstance</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Database</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></h5>
+<ul class="tsd-parameters">
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">role<wbr/>Table</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">server<wbr/>Id<wbr/>Key</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">server<wbr/>Table</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">sqlite<wbr/>Instance</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Database</span></h5></li></ul></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="_guildedjs_gil.BetterSQLite3Adapter.html" class="tsd-signature-type tsd-kind-class">BetterSQLite3Adapter</a></h4><aside class="tsd-sources">
+<p>Overrides <a href="_guildedjs_gil.DatabaseAdapter.html">DatabaseAdapter</a>.<a href="_guildedjs_gil.DatabaseAdapter.html#constructor">constructor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L48">guilded.js/lib/structures/Group.ts:48</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/gil/lib/adapters/db/BetterSQLite3Adapter.ts#L5">adapters/db/BetterSQLite3Adapter.ts:5</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
-<section class="tsd-panel tsd-member"><a id="archivedAt" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>archived<wbr/>At</span><a href="#archivedAt" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">archived<wbr/>At</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">Date</span></div><aside class="tsd-sources">
+<section class="tsd-panel tsd-member"><a id="options" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>options</span><a href="#options" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">options</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">roleTable</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">serverIdKey</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">serverTable</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">sqliteInstance</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Database</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
+<div class="tsd-type-declaration">
+<h4>Type declaration</h4>
+<ul class="tsd-parameters">
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">role<wbr/>Table</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">server<wbr/>Id<wbr/>Key</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">server<wbr/>Table</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">sqlite<wbr/>Instance</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Database</span></h5></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L43">guilded.js/lib/structures/Group.ts:43</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="archivedBy" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>archived<wbr/>By</span><a href="#archivedBy" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">archived<wbr/>By</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L46">guilded.js/lib/structures/Group.ts:46</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="avatar" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>avatar</span><a href="#avatar" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">avatar</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L28">guilded.js/lib/structures/Group.ts:28</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="client" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>client</span><a href="#client" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">client</span><span class="tsd-signature-symbol">:</span> <a href="guilded_js.Client.html" class="tsd-signature-type tsd-kind-class">Client</a></div><aside class="tsd-sources">
-<p>Inherited from <a href="guilded_js.Base.html">Base</a>.<a href="guilded_js.Base.html#client">client</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Base.ts#L15">guilded.js/lib/structures/Base.ts:15</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="createdAt" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>created<wbr/>At</span><a href="#createdAt" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">created<wbr/>At</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Date</span></div>
-<div class="tsd-comment tsd-typography"><p>The date this group was created at</p>
-</div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L22">guilded.js/lib/structures/Group.ts:22</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="createdBy" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>created<wbr/>By</span><a href="#createdBy" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">created<wbr/>By</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The ID of the user who created this group</p>
-</div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L19">guilded.js/lib/structures/Group.ts:19</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="description" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>description</span><a href="#description" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">description</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The description of the group</p>
-</div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L13">guilded.js/lib/structures/Group.ts:13</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="emoteId" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>emote<wbr/>Id</span><a href="#emoteId" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">emote<wbr/>Id</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L34">guilded.js/lib/structures/Group.ts:34</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="id" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>id</span><a href="#id" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">id</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>Identifier of this structrure</p>
-</div><aside class="tsd-sources">
-<p>Inherited from <a href="guilded_js.Base.html">Base</a>.<a href="guilded_js.Base.html#id">id</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Base.ts#L9">guilded.js/lib/structures/Base.ts:9</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="isHome" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>is<wbr/>Home</span><a href="#isHome" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">is<wbr/>Home</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L31">guilded.js/lib/structures/Group.ts:31</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="isPublic" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>is<wbr/>Public</span><a href="#isPublic" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">is<wbr/>Public</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L37">guilded.js/lib/structures/Group.ts:37</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="name" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>name</span><a href="#name" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">name</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The name of the group</p>
-</div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L10">guilded.js/lib/structures/Group.ts:10</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="raw" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>raw</span><a href="#raw" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">raw</span><span class="tsd-signature-symbol">:</span> <a href="../types/_guildedjs_api.GroupPayload.html" class="tsd-signature-type tsd-kind-type-alias">GroupPayload</a></div>
-<div class="tsd-comment tsd-typography"><p>Bare data of this structure</p>
-</div><aside class="tsd-sources">
-<p>Inherited from <a href="guilded_js.Base.html">Base</a>.<a href="guilded_js.Base.html#raw">raw</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Base.ts#L12">guilded.js/lib/structures/Base.ts:12</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="serverId" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>server<wbr/>Id</span><a href="#serverId" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">server<wbr/>Id</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>The ID of the server this group is in</p>
-</div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L16">guilded.js/lib/structures/Group.ts:16</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="updatedAt" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>updated<wbr/>At</span><a href="#updatedAt" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">updated<wbr/>At</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Date</span></div>
-<div class="tsd-comment tsd-typography"><p>The date this group was last updated at</p>
-</div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L25">guilded.js/lib/structures/Group.ts:25</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="updatedBy" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>updated<wbr/>By</span><a href="#updatedBy" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">updated<wbr/>By</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L40">guilded.js/lib/structures/Group.ts:40</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/gil/lib/adapters/db/BetterSQLite3Adapter.ts#L6">adapters/db/BetterSQLite3Adapter.ts:6</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="_clone" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>_clone</span><a href="#_clone" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="_clone._clone-1"><span class="tsd-kind-call-signature">_clone</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="guilded_js.Group.html" class="tsd-signature-type tsd-kind-class">Group</a><a href="#_clone._clone-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Taken from <a href="https://github.com/discordjs/discord.js/blob/8e8d9b490a71de6cabe6f16375d7549a7c5c3737/src/structures/Base.js#L20">https://github.com/discordjs/discord.js/blob/8e8d9b490a71de6cabe6f16375d7549a7c5c3737/src/structures/Base.js#L20</a>
-Licensed under the Apache License 2.0 <a href="https://github.com/discordjs/discord.js/blob/8e8d9b490a71de6cabe6f16375d7549a7c5c3737/LICENSE">https://github.com/discordjs/discord.js/blob/8e8d9b490a71de6cabe6f16375d7549a7c5c3737/LICENSE</a></p>
-</div>
-<h4 class="tsd-returns-title">Returns <a href="guilded_js.Group.html" class="tsd-signature-type tsd-kind-class">Group</a></h4><aside class="tsd-sources">
-<p>Inherited from <a href="guilded_js.Base.html">Base</a>.<a href="guilded_js.Base.html#_clone">_clone</a></p>
-<ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Base.ts#L28">guilded.js/lib/structures/Base.ts:28</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="_update" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>_update</span><a href="#_update" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<section class="tsd-panel tsd-member"><a id="createServer" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>create<wbr/>Server</span><a href="#createServer" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="_update._update-1"><span class="tsd-kind-call-signature">_update</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">data</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="guilded_js.Group.html" class="tsd-signature-type tsd-kind-class">Group</a><a href="#_update._update-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="createServer.createServer-1"><span class="tsd-kind-call-signature">create<wbr/>Server</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">serverId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_guildedjs_gil.StoredServer.html" class="tsd-signature-type tsd-kind-interface">StoredServer</a><span class="tsd-signature-symbol">&gt;</span><a href="#createServer.createServer-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">data</span>: <a href="../types/_guildedjs_api.GroupPayload.html" class="tsd-signature-type tsd-kind-type-alias">GroupPayload</a></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="guilded_js.Group.html" class="tsd-signature-type tsd-kind-class">Group</a></h4><aside class="tsd-sources">
+<h5><span class="tsd-kind-parameter">serverId</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_guildedjs_gil.StoredServer.html" class="tsd-signature-type tsd-kind-interface">StoredServer</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<p>Overrides <a href="_guildedjs_gil.DatabaseAdapter.html">DatabaseAdapter</a>.<a href="_guildedjs_gil.DatabaseAdapter.html#createServer">createServer</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L57">guilded.js/lib/structures/Group.ts:57</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="addMember" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>add<wbr/>Member</span><a href="#addMember" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/gil/lib/adapters/db/BetterSQLite3Adapter.ts#L27">adapters/db/BetterSQLite3Adapter.ts:27</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="getRoles" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>get<wbr/>Roles</span><a href="#getRoles" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="addMember.addMember-1"><span class="tsd-kind-call-signature">add<wbr/>Member</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">memberId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#addMember.addMember-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="getRoles.getRoles-1"><span class="tsd-kind-call-signature">get<wbr/>Roles</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">serverId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_guildedjs_gil.StoredRole.html" class="tsd-signature-type tsd-kind-interface">StoredRole</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#getRoles.getRoles-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Adds a member to the group.</p>
-</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">memberId</span>: <span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The ID of the member to add.</p>
-</div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><p>A Promise that resolves with no result on success.</p>
-<aside class="tsd-sources">
+<h5><span class="tsd-kind-parameter">serverId</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_guildedjs_gil.StoredRole.html" class="tsd-signature-type tsd-kind-interface">StoredRole</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<p>Overrides <a href="_guildedjs_gil.DatabaseAdapter.html">DatabaseAdapter</a>.<a href="_guildedjs_gil.DatabaseAdapter.html#getRoles">getRoles</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L78">guilded.js/lib/structures/Group.ts:78</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="removeMember" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>remove<wbr/>Member</span><a href="#removeMember" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/gil/lib/adapters/db/BetterSQLite3Adapter.ts#L39">adapters/db/BetterSQLite3Adapter.ts:39</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="getServer" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>get<wbr/>Server</span><a href="#getServer" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="removeMember.removeMember-1"><span class="tsd-kind-call-signature">remove<wbr/>Member</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">memberId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#removeMember.removeMember-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="getServer.getServer-1"><span class="tsd-kind-call-signature">get<wbr/>Server</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">serverId</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_guildedjs_gil.StoredServer.html" class="tsd-signature-type tsd-kind-interface">StoredServer</a><span class="tsd-signature-symbol">&gt;</span><a href="#getServer.getServer-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Removes a member from the group.</p>
-</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">memberId</span>: <span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The ID of the member to remove.</p>
-</div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><p>A Promise that resolves with no result on success.</p>
-<aside class="tsd-sources">
+<h5><span class="tsd-kind-parameter">serverId</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_guildedjs_gil.StoredServer.html" class="tsd-signature-type tsd-kind-interface">StoredServer</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<p>Overrides <a href="_guildedjs_gil.DatabaseAdapter.html">DatabaseAdapter</a>.<a href="_guildedjs_gil.DatabaseAdapter.html#getServer">getServer</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/guilded.js/lib/structures/Group.ts#L88">guilded.js/lib/structures/Group.ts:88</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/zaida04/guilded.js/blob/d429f10/packages/gil/lib/adapters/db/BetterSQLite3Adapter.ts#L16">adapters/db/BetterSQLite3Adapter.ts:16</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -264,26 +150,10 @@ Licensed under the Apache License 2.0 <a href="https://github.com/discordjs/disc
 <div class="tsd-accordion-details">
 <ul>
 <li><a href="#constructor" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-512-path"></use><use href="#icon-512-text"></use></svg><span>constructor</span></a></li>
-<li><a href="#archivedAt" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>archived<wbr/>At</span></a></li>
-<li><a href="#archivedBy" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>archived<wbr/>By</span></a></li>
-<li><a href="#avatar" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>avatar</span></a></li>
-<li><a href="#client" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>client</span></a></li>
-<li><a href="#createdAt" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>created<wbr/>At</span></a></li>
-<li><a href="#createdBy" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>created<wbr/>By</span></a></li>
-<li><a href="#description" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>description</span></a></li>
-<li><a href="#emoteId" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>emote<wbr/>Id</span></a></li>
-<li><a href="#id" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>id</span></a></li>
-<li><a href="#isHome" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>is<wbr/>Home</span></a></li>
-<li><a href="#isPublic" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>is<wbr/>Public</span></a></li>
-<li><a href="#name" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>name</span></a></li>
-<li><a href="#raw" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>raw</span></a></li>
-<li><a href="#serverId" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>server<wbr/>Id</span></a></li>
-<li><a href="#updatedAt" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>updated<wbr/>At</span></a></li>
-<li><a href="#updatedBy" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>updated<wbr/>By</span></a></li>
-<li><a href="#_clone" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>_clone</span></a></li>
-<li><a href="#_update" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>_update</span></a></li>
-<li><a href="#addMember" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>add<wbr/>Member</span></a></li>
-<li><a href="#removeMember" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>remove<wbr/>Member</span></a></li></ul></div></details></div>
+<li><a href="#options" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>options</span></a></li>
+<li><a href="#createServer" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>create<wbr/>Server</span></a></li>
+<li><a href="#getRoles" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Roles</span></a></li>
+<li><a href="#getServer" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Server</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../index.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-4-path"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)" id="icon-4-text"></path></svg><span>Guilded.JS</span></a>
 <ul class="tsd-small-nested-navigation">
@@ -434,11 +304,11 @@ Licensed under the Apache License 2.0 <a href="https://github.com/discordjs/disc
 <li><a href="../functions/_guildedjs_api.transformEmbedToAPIEmbed.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>transform<wbr/>Embed<wbr/>ToAPIEmbed</span></a></li></ul></div></details></li>
 <li><a href="../modules/create_guilded_app.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>create-<wbr/>guilded-<wbr/>app</span></a></li>
 <li>
-<details class="tsd-index-accordion" data-key="@guildedjs/gil"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg><a href="../modules/_guildedjs_gil.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>@guildedjs/gil</span></a></summary>
+<details class="tsd-index-accordion" open data-key="@guildedjs/gil"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg><a href="../modules/_guildedjs_gil.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>@guildedjs/gil</span></a></summary>
 <div class="tsd-accordion-details">
 <ul class="tsd-nested-navigation">
 <li><a href="../enums/_guildedjs_gil.StoredRoleType.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg><span>Stored<wbr/>Role<wbr/>Type</span></a></li>
-<li><a href="_guildedjs_gil.BetterSQLite3Adapter.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>BetterSQLite3<wbr/>Adapter</span></a></li>
+<li><a href="_guildedjs_gil.BetterSQLite3Adapter.html" class="current"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>BetterSQLite3<wbr/>Adapter</span></a></li>
 <li><a href="_guildedjs_gil.Command.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Command</span></a></li>
 <li><a href="_guildedjs_gil.CommandManager.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Command<wbr/>Manager</span></a></li>
 <li><a href="_guildedjs_gil.ConsoleAdapter.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Console<wbr/>Adapter</span></a></li>
@@ -458,7 +328,7 @@ Licensed under the Apache License 2.0 <a href="https://github.com/discordjs/disc
 <li><a href="../interfaces/_guildedjs_gil.StoredRole.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg><span>Stored<wbr/>Role</span></a></li>
 <li><a href="../interfaces/_guildedjs_gil.StoredServer.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg><span>Stored<wbr/>Server</span></a></li></ul></div></details></li>
 <li>
-<details class="tsd-index-accordion" open data-key="guilded.js"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg><a href="../modules/guilded_js.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>guilded.js</span></a></summary>
+<details class="tsd-index-accordion" data-key="guilded.js"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg><a href="../modules/guilded_js.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4-path"></use><use href="#icon-4-text"></use></svg><span>guilded.js</span></a></summary>
 <div class="tsd-accordion-details">
 <ul class="tsd-nested-navigation">
 <li><a href="../enums/guilded_js.ChannelType.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg><span>Channel<wbr/>Type</span></a></li>
@@ -497,7 +367,7 @@ Licensed under the Apache License 2.0 <a href="https://github.com/discordjs/disc
 <li><a href="guilded_js.GlobalServerManager.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Global<wbr/>Server<wbr/>Manager</span></a></li>
 <li><a href="guilded_js.GlobalUserManager.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Global<wbr/>User<wbr/>Manager</span></a></li>
 <li><a href="guilded_js.GlobalWebhookManager.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Global<wbr/>Webhook<wbr/>Manager</span></a></li>
-<li><a href="guilded_js.Group.html" class="current"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Group</span></a></li>
+<li><a href="guilded_js.Group.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Group</span></a></li>
 <li><a href="guilded_js.ListChannel.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>List<wbr/>Channel</span></a></li>
 <li><a href="guilded_js.Member.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Member</span></a></li>
 <li><a href="guilded_js.MemberBan.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Member<wbr/>Ban</span></a></li>
